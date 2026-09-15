@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Generales</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f7ede2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .card {
+            background-color: #fbf6f0;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border: 1px solid #d4c3b3;
+            overflow: hidden;
+        }
+
+        .card-header {
+            background: linear-gradient(to bottom, #c4a275, #a88352);
+            color: #ffffff;
+            font-size: 1.25rem;
+            font-weight: 500;
+            padding: 12px 20px;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid #967445;
+        }
+
+        .card-body {
+            padding: 25px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .data-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.15rem;
+            color: #333333;
+        }
+
+        .label {
+            font-weight: bold;
+            width: 35%;
+            text-align: right;
+            padding-right: 12px;
+        }
+
+        .value {
+            width: 65%;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Bloque 1: Datos Generales Enviados -->
+        <div class="card">
+            <div class="card-header">
+                Datos Generales Enviados
+            </div>
+            <div class="card-body">
+                <div class="data-row">
+                    <span class="label">Folio:</span>
+                    <span class="value">26NK5473390</span>
+                </div>
+                <div class="data-row">
+                    <span class="label">RFC:</span>
+                    <span class="value">CARA940525DW6</span>
+                </div>
+                <div class="data-row">
+                    <span class="label">Fecha:</span>
+                    <span class="value">15-09-2026</span>
+                </div>
+                <div class="data-row">
+                    <span class="label">Sentido:</span>
+                    <span class="value">Positivo</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bloque 2: Datos Generales Consultados -->
+        <div class="card">
+            <div class="card-header">
+                Datos Generales Consultados
+            </div>
+            <div class="card-body">
+                <div class="data-row">
+                    <span class="label">Folio:</span>
+                    <span class="value">26NK5473390</span>
+                </div>
+                <div class="data-row">
+                    <span class="label">RFC:</span>
+                    <span class="value">CARA940525DW6</span>
+                </div>
+                <div class="data-row">
+                    <span class="label">Fecha:</span>
+                    <span class="value">15-09-2026</span>
+                </div>
+                <div class="data-row">
+                    <span class="label">Sentido:</span>
+                    <span class="value">Positivo</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
